@@ -1,4 +1,4 @@
-module redishandler
+module github.com/nicolebroyak/niqurldev/internal/redishandler
 
 go 1.18
 

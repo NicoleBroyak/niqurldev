@@ -4,7 +4,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/nicolebroyak/niqurl/internal/redishandler"
+	"github.com/nicolebroyak/niqurldev/internal/redishandler"
 
 	"github.com/gin-gonic/gin"
 )
