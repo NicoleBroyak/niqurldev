@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/nicolebroyak/niqurldev/internal/redishandler"
+	"github.com/nicolebroyak/niqurldev/tools/redishandler"
 
 	"github.com/gin-gonic/gin"
 )

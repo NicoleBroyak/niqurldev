@@ -1,10 +1,10 @@
-package api
+package main
 
 import (
 	"os"
 	"path"
 
-	"github.com/nicolebroyak/niqurldev/internal/redishandler"
+	"github.com/nicolebroyak/niqurldev/tools/redishandler"
 
 	"github.com/gin-gonic/gin"
 )
@@ -23,8 +23,8 @@ func StartServer() {
 		path.Join(tmplPath, "404.html"),
 		path.Join(tmplPath, "inspectURL.html"),
 	)
-	server.GET("/!:url", inspectURL)
-	server.GET("/:url", redirectURL)
-	server.NoRoute(notFound)
+	server.GET("/!:url", api.inspectURL)
+	server.GET("/:url", api.redirectURL)
+	server.NoRoute(api.notFound)
 	server.Run(":8081")
 }
