@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 	"path"
-	"github.com/NicoleBroyak/niqurldev/api"
+	"github.com/nicolebroyak/niqurldev/api"
 	"github.com/gin-gonic/gin"
-	"github.com/NicoleBroyak/niqurldev/tools/redishandler"
+	"github.com/nicolebroyak/niqurldev/tools/redishandler"
 )
 
 func main() {
