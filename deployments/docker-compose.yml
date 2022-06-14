@@ -1,7 +1,7 @@
 services:
   niqurl-server:
     container_name: niqurl-server
-    build: niqurl-server/.
+    build: https://raw.githubusercontent.com/nicolebroyak/niqurldev/master/build/server/Dockerfile
     links:
       - redis
     ports:
@@ -10,7 +10,7 @@ services:
       - default
   niqurl-cli:
     container_name: niqurl-cli
-    build: niqurl-cli/.
+    build: https://raw.githubusercontent.com/nicolebroyak/niqurldev/master/build/cli/Dockerfile
     links:
       - redis
       - niqurl-server

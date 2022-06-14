@@ -1,9 +1,10 @@
 FROM golang:1.18
 
 WORKDIR /go/app
-
-COPY . .
+RUN git clone "https://github.com/nicolebroyak/niqurldev/"
+WORKDIR /go/app/niqurldev/cmd/server
+RUN go mod tidy
+RUN go build -o bin/server
 
 EXPOSE 8081
-RUN go install niqurl-server.go
-CMD "niqurl-server"
+CMD [ "./bin/server" ]
