@@ -4,7 +4,7 @@ go 1.18
 
 require (
 	github.com/gin-gonic/gin v1.8.1
-	github.com/nicolebroyak/niqurldev/api v0.0.0-20220614160034-e7249bae1514
+	github.com/nicolebroyak/niqurldev/api v0.0.1
 	github.com/nicolebroyak/niqurldev/tools/redishandler v0.0.0-20220614154201-cd447f87fe61
 )
 
