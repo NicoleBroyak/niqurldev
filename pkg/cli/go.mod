@@ -1,4 +1,4 @@
-module github.com/nicolebroyak/niqurldev/internal/cli
+module github.com/nicolebroyak/niqurldev/pkg/cli
 
 go 1.18
 

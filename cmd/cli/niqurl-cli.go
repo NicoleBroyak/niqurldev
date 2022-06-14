@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"github.com/nicolebroyak/niqurldev/internal/cli"
+	"github.com/nicolebroyak/niqurldev/pkg/cli"
 	"github.com/nicolebroyak/niqurldev/tools/redishandler"
 )
 
