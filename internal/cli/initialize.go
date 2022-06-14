@@ -1,7 +1,7 @@
 package cli
 
 import (
-	"redishandler"
+	"github.com/nicolebroyak/niqurldev/tools/redishandler"
 
 	"github.com/desertbit/grumble"
 )
