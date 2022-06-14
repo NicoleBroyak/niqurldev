@@ -1,4 +1,4 @@
-package cli
+package main
 
 import (
 	"github.com/nicolebroyak/niqurldev/pkg/cli"

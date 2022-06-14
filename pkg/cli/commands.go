@@ -100,12 +100,12 @@ func cmdSetTime(c *grumble.Context) error {
 func cmdMake(c *grumble.Context) error {
 	url := c.Args.String("url")
 	redishandler.CheckSettings()
-	if redishandler.CheckZSet(url, "longurl") == true {
+	if redishandler.CheckZSet(url, "longurl") {
 		redishandler.PrintShortURL(url)
 		return nil
 	}
 	user := redishandler.RandomUser()
-	if redishandler.CheckWaitTime(user) == false {
+	if !redishandler.CheckWaitTime(user) {
 		shrt := redishandler.ShortURL(url)
 		redishandler.InsertURL(url, shrt, user)
 		return nil
