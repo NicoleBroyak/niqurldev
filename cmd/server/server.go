@@ -3,8 +3,9 @@ package main
 import (
 	"os"
 	"path"
-	"github.com/nicolebroyak/niqurldev/api"
+
 	"github.com/gin-gonic/gin"
+	"github.com/nicolebroyak/niqurldev/api"
 	"github.com/nicolebroyak/niqurldev/tools/redishandler"
 )
 

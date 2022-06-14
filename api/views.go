@@ -13,7 +13,7 @@ import (
 func RedirectURL(c *gin.Context) {
 	url, err := FindShortURL(c.Param("url"))
 	if err != nil {
-		notFound(c)
+		NotFound(c)
 		return
 	}
 	c.Redirect(http.StatusMovedPermanently, url)
@@ -22,7 +22,7 @@ func RedirectURL(c *gin.Context) {
 func InspectURL(c *gin.Context) {
 	x, b := FindShortURLInfo(c.Param("url"))
 	if b != nil {
-		notFound(c)
+		NotFound(c)
 		return
 	}
 	c.HTML(http.StatusOK, "inspectURL.html", x)
