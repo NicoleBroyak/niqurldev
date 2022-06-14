@@ -22,8 +22,8 @@ func StartServer() {
 		path.Join(tmplPath, "404.html"),
 		path.Join(tmplPath, "inspectURL.html"),
 	)
-	server.GET("/!:url", api.inspectURL)
-	server.GET("/:url", api.redirectURL)
-	server.NoRoute(api.notFound)
+	server.GET("/!:url", api.InspectURL)
+	server.GET("/:url", api.RedirectURL)
+	server.NoRoute(api.NotFound)
 	server.Run(":8081")
 }

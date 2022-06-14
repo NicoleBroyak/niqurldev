@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func redirectURL(c *gin.Context) {
+func RedirectURL(c *gin.Context) {
 	url, err := FindShortURL(c.Param("url"))
 	if err != nil {
 		notFound(c)
@@ -19,7 +19,7 @@ func redirectURL(c *gin.Context) {
 	c.Redirect(http.StatusMovedPermanently, url)
 }
 
-func inspectURL(c *gin.Context) {
+func InspectURL(c *gin.Context) {
 	x, b := FindShortURLInfo(c.Param("url"))
 	if b != nil {
 		notFound(c)
@@ -28,7 +28,7 @@ func inspectURL(c *gin.Context) {
 	c.HTML(http.StatusOK, "inspectURL.html", x)
 }
 
-func notFound(c *gin.Context) {
+func NotFound(c *gin.Context) {
 	c.HTML(404, "404.html", "")
 }
 
