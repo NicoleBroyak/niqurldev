@@ -1,4 +1,4 @@
-module redishandler
+module github.com/NicoleBroyak/tools/redishandler
 
 go 1.18
 
