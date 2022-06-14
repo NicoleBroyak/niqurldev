@@ -1,0 +1,28 @@
+services:
+  niqurl-server:
+    container_name: niqurl-server
+    build: niqurl-server/.
+    links:
+      - redis
+    ports:
+      - "8081"
+    networks:
+      - default
+  niqurl-cli:
+    container_name: niqurl-cli
+    build: niqurl-cli/.
+    links:
+      - redis
+      - niqurl-server
+    networks:
+      - default
+    stdin_open: true 
+    tty: true        
+  redis:
+    container_name: niqurl-redis
+    image: redis
+    networks:
+      - default
+networks:
+  default:
+    driver: bridge

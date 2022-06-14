@@ -1,0 +1,9 @@
+{{ define "inspectURL.html" }}
+<html><h1>
+	NiQurl
+</h1>
+<p>ShortURL: {{ .shorturl }}</p>
+<p>Redirects to: <a href={{ .longurl }}>{{ .longurl }}</a></p>
+<p>Submitted by: {{ .user }}</p>
+</html>
+{{ end }}

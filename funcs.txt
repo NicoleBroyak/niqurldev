@@ -1,0 +1,42 @@
+./niqurl-cli/niqurl-cli.go:func main() {
+./niqurl-cli/cli/start.go:func Start() {
+./niqurl-cli/cli/create_app.go:func createApp() *grumble.App {
+./niqurl-cli/cli/create_app.go:		Flags: func(f *grumble.Flags) {
+./niqurl-cli/cli/commands.go:func commands(app *grumble.App) {
+./niqurl-cli/cli/commands.go:func settime(app *grumble.App) {
+./niqurl-cli/cli/commands.go:		Args: func(a *grumble.Args) {
+./niqurl-cli/cli/commands.go:func setlen(app *grumble.App) {
+./niqurl-cli/cli/commands.go:		Args: func(a *grumble.Args) {
+./niqurl-cli/cli/commands.go:func makeurl(app *grumble.App) {
+./niqurl-cli/cli/commands.go:		Args: func(a *grumble.Args) {
+./niqurl-cli/cli/commands.go:func settings(app *grumble.App) {
+./niqurl-cli/cli/commands.go:func cmdSettings(c *grumble.Context) error {
+./niqurl-cli/cli/commands.go:func cmdSetVar(cmd, v string, min, max int, c *grumble.Context) error {
+./niqurl-cli/cli/commands.go:func cmdSetLen(c *grumble.Context) error {
+./niqurl-cli/cli/commands.go:func cmdSetTime(c *grumble.Context) error {
+./niqurl-cli/cli/commands.go:func cmdMake(c *grumble.Context) error {
+./niqurl-cli/cli/flags.go:func GFUflag(a *grumble.App, flags grumble.FlagMap) error {
+./niqurl-cli/cli/initialize.go:func initialize(a *grumble.App, flags grumble.FlagMap) error {
+./niqurl-cli/redishandler/settings.go:func getSetting(setting string) (int, error) {
+./niqurl-cli/redishandler/settings.go:func CheckSettings() {
+./niqurl-cli/redishandler/settings.go:func checkSetting(setting string, def int) {
+./niqurl-cli/redishandler/tools.go:func CheckZSet(val, set string) bool {
+./niqurl-cli/redishandler/tools.go:func CheckWaitTime(user string) bool {
+./niqurl-cli/redishandler/url.go:func PrintShortURL(url string) error {
+./niqurl-cli/redishandler/url.go:func InsertURL(url, shorturl, user string) {
+./niqurl-cli/redishandler/url.go:func ShortURL(url string) string {
+./niqurl-cli/redishandler/url.go:func shortURLGenerate(n int) string {
+./niqurl-cli/redishandler/start.go:func Start() *redis.Client {
+./niqurl-cli/redishandler/users.go:func RandomUser() string {
+./niqurl-cli/redishandler/users.go:func GenerateFakeUsers(num int) error {
+./niqurl-cli/redishandler/users.go:func gfuFillStruct(url string, Users *UsersStruct) error {
+./niqurl-cli/redishandler/users.go:func insertUser(i int, u *UsersStruct) {
+
+./niqurl-server/api/server.go:func StartServer() {
+./niqurl-server/api/views.go:func redirectURL(c *gin.Context) {
+./niqurl-server/api/views.go:func viewURL(c *gin.Context) {
+./niqurl-server/api/views.go:func notFound(c *gin.Context) {
+./niqurl-server/niqurl-server.go:func main() {
+./niqurl-server/redishandler/start.go:func Start() *redis.Client {
+./niqurl-server/redishandler/api.go:func ViewAPI(url string) (map[string]interface{}, error) {
+./niqurl-server/redishandler/api.go:func RedirectAPI(url string) (string, error) {
