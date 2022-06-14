@@ -4,7 +4,7 @@ WORKDIR /go/app
 RUN git clone "https://github.com/nicolebroyak/niqurldev/"
 WORKDIR /go/app/niqurldev/cmd/server
 RUN go mod tidy
-RUN go build -o bin/server
+RUN go build -o server
 
 EXPOSE 8081
-CMD [ "./bin/server" ]
+CMD [ "server" ]
