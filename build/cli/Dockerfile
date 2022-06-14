@@ -7,4 +7,4 @@ RUN go mod tidy
 RUN go build -o niqurl
 
 EXPOSE 8081
-CMD [ "niqurl" ]
+CMD [ "./niqurl" ]
