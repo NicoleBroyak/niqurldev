@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/desertbit/grumble v1.1.3
 	github.com/fatih/color v1.13.0
-	github.com/nicolebroyak/niqurldev/tools/redishandler v0.0.2-7-g2827ef9
+	github.com/nicolebroyak/niqurldev/tools/redishandler v0.0.1
 )
 
 require (
