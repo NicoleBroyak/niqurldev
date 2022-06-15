@@ -3,8 +3,8 @@ module github.com/nicolebroyak/niqurldev/cmd/cli
 go 1.18
 
 require (
-	github.com/nicolebroyak/niqurldev/pkg/cli v0.0.0-20220614165001-119e693ceb85
-	github.com/nicolebroyak/niqurldev/tools/redishandler v0.0.0-20220614163012-aee4c3dba100
+	github.com/nicolebroyak/niqurldev/pkg/cli v0.0.2-7-g2827ef9
+	github.com/nicolebroyak/niqurldev/tools/redishandler v0.0.2-7-g2827ef9
 )
 
 require (
